@@ -1,0 +1,177 @@
+/* Container Wrapper */
+.container-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f5f3ff; /* Light purple background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Stock Company Name Container */
+.stock-company-name-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.stock-company-name-container h1 {
+    font-size: 40px;
+    color: #5a2d91; /* Dark purple color */
+    font-weight: 600;
+}
+
+/* Stock Company Info Container */
+.stock-company-info-container {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.stock-company-info-container p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #6a0dad; /* Purple text */
+}
+
+.stock-company-info-container p strong {
+    color: #4b0082; /* Indigo for emphasis */
+}
+
+/* Financial Status Container */
+.financial-status-container {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.financial-status-container h2 {
+    font-size: 28px;
+    color: #5a2d91; /* Dark purple */
+    margin-bottom: 20px;
+}
+
+.financial-status-container p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #6a0dad; /* Purple */
+}
+
+/* Time Period Buttons */
+.time-period-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.time-period-button {
+    background-color: #8a2be2; /* Purple button */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 0 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.time-period-button:hover {
+    background-color: #6a0dad; /* Darker purple on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.time-period-button.active {
+    background-color: #4b0082; /* Even darker purple for active state */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* Chart Container */
+.chart-container {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.chart-container h2 {
+    font-size: 28px;
+    color: #5a2d91; /* Dark purple */
+    margin-bottom: 20px;
+}
+
+/* Predict Button Container */
+.predict-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.predict-button {
+    background-color: #8a2be2; /* Purple button */
+    color: white;
+    border: none;
+    padding: 14px 35px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.predict-button:hover {
+    background-color: #6a0dad; /* Darker purple on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Loading Spinner */
+.spinner {
+    font-size: 24px;
+    text-align: center;
+    margin: 50px 0;
+}
+
+/* Error Message */
+.error-message-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px); /* Adjust height to fit between Navbar and Footer */
+    padding: 20px;
+}
+
+.error-message {
+    color: #d9534f; /* Bootstrap danger color */
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #f8d7da; /* Light red background */
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #d9534f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container-wrapper {
+        padding: 15px;
+    }
+
+    .stock-company-name-container h1 {
+        font-size: 30px;
+    }
+
+    .financial-status-container h2,
+    .chart-container h2 {
+        font-size: 22px;
+    }
+
+    .time-period-button {
+        padding: 10px 18px;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oxygen+Mono&display=swap');
+
+.homepage {
+  text-align: center;
+  padding: 20px;
+}
+
+.content {
+  margin-top: 30px;
+}
+
+.title {
+  font-size: 4rem; /* Responsive font size */
+  margin-bottom: 10px;
+  font-family: "Oxygen Mono";
+  font-weight: 600;
+  color: #6a0dad; /* Changed to purple */
+}
+
+.subtitle {
+  font-size: 1.5rem; /* Responsive font size */
+  color: #8a2be2; /* Lighter purple */
+  margin-bottom: 20px;
+}
+
+.get-started-btn {
+  background-color: #6a0dad; /* Changed to purple */
+  color: white;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0;
+}
+
+.get-started-btn:hover {
+  background-color: #5b0c97; /* Darker purple */
+}
+
+.container {
+  margin-top: 0;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.cityScapeImage1 {
+  width: 100%;
+  height: auto;
+  margin-top: 0;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  animation: rotate infinite 5s linear;
+}
+
+.finance-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.left-section {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.icon {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.5rem; /* Responsive font size */
+  margin-bottom: 20px;
+  font-family: "Oxygen Mono";
+  font-weight: 600;
+  color: #6a0dad; /* Changed to purple */
+}
+
+.description {
+  font-size: 1rem;
+  color: #8a2be2; /* Lighter purple */
+  margin-bottom: 40px;
+  font-family: "Oxygen Mono";
+  font-weight: 600;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.option img {
+  width: 30px;
+  margin-right: 15px;
+}
+
+.option:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.right-section {
+  max-width: 100%;
+  text-align: center;
+}
+
+.phone-img {
+  width: 100%;
+  max-width: 300px;
+  margin-left: auto;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons a {
+  color: #fff;
+  margin: 0 15px;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #cb9725; /* Keep this color or change to a lighter shade of purple */
+}
+
+.footer-links {
+  margin-top: 15px;
+}
+
+.footer-links a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #cb9725; /* Keep this color or change to a lighter shade of purple */
+}
+
+.footer-info {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.movingElement {
+  display: block;
+  animation: moveUpDown 2s infinite ease-in-out;
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) {
+  .finance-page {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .left-section {
+    max-width: 50%;
+  }
+
+  .right-section {
+    max-width: 40%;
+  }
+}
+
+@media (min-width: 992px) {
+  .title {
+    font-size: 5rem;
+  }
+
+  .subtitle {
+    font-size: 2rem;
+  }
+
+  .h1 {
+    font-size: 3rem;
+  }
+
+  .description {
+    font-size: 1.25rem;
+  }
+}

@@ -1,0 +1,54 @@
+
+
+.predict-stocks-page {
+    font-family: Arial, sans-serif;
+}
+
+.predict-stocks-hero {
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.predict-stocks-hero-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    color: #4B0082; /* Dark violet */
+}
+
+#predictpageArticle {
+    color: #6A0AD4; /* Purple */
+}
+
+.predict-loading,
+.predict-stocks-error {
+    color: #D5006D; /* Pink for error messages */
+}
+
+.indices-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.indices-table th,
+.indices-table td {
+    border: 1px solid #4B0082; /* Dark violet */
+    padding: 10px;
+    text-align: center;
+}
+
+.indices-table th {
+    background-color: #6A0AD4; /* Purple */
+    color: white;
+}
+
+.indices-table tr:nth-child(even) {
+    background-color: #E1BEE7; /* Light purple */
+}
+
+.indices-table tr:hover {
+    background-color: #D1C4E9; /* Hover color */
+}
